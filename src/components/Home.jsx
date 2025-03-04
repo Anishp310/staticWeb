@@ -1,12 +1,16 @@
 import React from "react";
+import VidImg from "../assets/3.jpg";
 
 export const Home = () => {
   return (
     <div>
       {/* Banner Section */}
-      <section className='bg-green-700 text-white py-20'>
+      <section
+        className='bg-cover bg-center text-white py-20'
+        style={{ backgroundImage: `url(${VidImg})` }}
+      >
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
-          <h1 className='text-4xl font-bold mb-4'>
+          <h1 className='text-4xl font-bold mb-4 '>
             Empowering Youth for a Sustainable Future
           </h1>
           <p className='text-lg mb-8'>
@@ -59,7 +63,6 @@ export const Home = () => {
                 yields and sustainability.
               </p>
             </div>
-            
             <div className='bg-white p-6 rounded-lg shadow-lg'>
               <h3 className='text-xl font-bold mb-2'>
                 Environmental Conservation

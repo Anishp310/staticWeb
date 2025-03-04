@@ -1,11 +1,24 @@
 import React from "react";
+import VidImg1 from "../assets/1.jpg"; // Ensure this path is correct
+import VidImg2 from "../assets/2.jpg"; // Ensure this path is correct
 
 export const About = () => {
   return (
-    <div className='py-12 bg-gray-50'>
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <h2 className='text-3xl font-bold text-center mb-8'>About YEAST</h2>
+    <div className='py-12 pt-0 bg-gray-50'>
+      {/* Banner Image at the Top */}
+      <div></div>
+      <div className='relative w-full h-64  overflow-hidden'>
+        <img
+          src={VidImg2}
+          alt='Banner'
+          className='w-full h-full object-cover'
+        />
+        <h2 className='absolute top-[20%] left-[30%] text-3xl font-bold text-center mb-8 mt-8 text-white'>
+          About YEAST
+        </h2>
+      </div>
 
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         {/* Vision, Mission, Goals, and Objectives */}
         <div className='mb-12'>
           <h3 className='text-2xl font-bold mb-4 text-gray-700'>Our Vision</h3>
@@ -97,6 +110,15 @@ export const About = () => {
               Ensure transparency and sustainability in all YEAST projects.
             </li>
           </ul>
+        </div>
+
+        {/* Banner Image Between Sections */}
+        <div className='w-full h-64 md:h-96 overflow-hidden my-12'>
+          <img
+            src={VidImg1}
+            alt='Banner'
+            className='w-full h-full object-cover'
+          />
         </div>
 
         {/* History and Milestones */}

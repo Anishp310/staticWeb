@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import donationImg from "../assets/donation.jpg";
 
 export const Donate = () => {
   const [showQRCode, setShowQRCode] = useState(false); // State to manage QR code visibility
@@ -9,11 +10,19 @@ export const Donate = () => {
 
   return (
     <div className='py-12 bg-gray-50'>
+      <div className=' w-full h-64 overflow-hidden'>
+        {/* Banner Image with improved styling */}
+        <img
+          src={donationImg}
+          alt='Banner'
+          className='w-full h-full object-cover object-center'
+        />
+      </div>
+
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <h2 className='text-3xl font-bold text-center mb-8 text-green-700'>
+        <h2 className='text-3xl font-bold text-center mb-8 mt-8'>
           Donate
         </h2>
-
         {/* Donation Description */}
         <div className='mb-12 text-center'>
           <p className='text-gray-600 text-lg mb-6'>
