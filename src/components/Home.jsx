@@ -1,5 +1,6 @@
 import React from "react";
 import VidImg from "../assets/3.jpg";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -18,24 +19,24 @@ export const Home = () => {
             conservation, social development, and community empowerment.
           </p>
           <div className='space-x-4'>
-            <a
-              href='/get-involved'
+            <Link
+              to='/get-involved'
               className='bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-green-100'
             >
               Get Involved
-            </a>
-            <a
-              href='/donate'
+            </Link>
+            <Link
+              to='/donate'
               className='bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-green-100'
             >
               Donate
-            </a>
-            <a
-              href='/get-involved'
+            </Link>
+            <Link
+              to='/get-involved'
               className='bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-green-100'
             >
               Volunteer
-            </a>
+            </Link>
           </div>
         </div>
       </section>

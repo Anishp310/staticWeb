@@ -1,10 +1,18 @@
 import React from "react";
-
+import GetInvolvedImg from "../assets/getinvolved.png";
 export const GetInvolved = () => {
   return (
-    <div className='py-12'>
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <h2 className='text-3xl font-bold text-center mb-8'>Get Involved</h2>
+    <div className='py-12 pt-0'>
+      <div className='relative w-full h-64 overflow-hidden'>
+        {/* Banner Image with improved styling */}
+        <img
+          src={GetInvolvedImg}
+          alt='Banner'
+          className='w-full h-full object-cover object-center'
+        />
+      </div>
+      <div className='pt-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <h2 className=' text-3xl font-bold text-center mb-8'>Get Involved</h2>
 
         {/* Volunteer Opportunities */}
         <div className='mb-12'>
