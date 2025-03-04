@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import donationImg from "../assets/donation.jpg";
 
 export const Donate = () => {
-  const [showQRCode, setShowQRCode] = useState(false); // State to manage QR code visibility
+  const [showQRCode, setShowQRCode] = useState(false);
+  const qrCodeRef = useRef(null);
 
   const handleDonateClick = () => {
-    setShowQRCode(!showQRCode); // Toggle QR code visibility
+    setShowQRCode(true); 
+    qrCodeRef.current?.scrollIntoView({ behavior: "smooth" }); 
   };
 
   return (
     <div className='py-12 bg-gray-50'>
-      <div className=' w-full h-64 overflow-hidden'>
-        {/* Banner Image with improved styling */}
+      <div className='w-full h-64 overflow-hidden'>
         <img
           src={donationImg}
           alt='Banner'
@@ -20,10 +21,7 @@ export const Donate = () => {
       </div>
 
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <h2 className='text-3xl font-bold text-center mb-8 mt-8'>
-          Donate
-        </h2>
-        {/* Donation Description */}
+        <h2 className='text-3xl font-bold text-center mb-8 mt-8'>Donate</h2>
         <div className='mb-12 text-center'>
           <p className='text-gray-600 text-lg mb-6'>
             Your generous donations help us create a sustainable and equitable
@@ -36,14 +34,13 @@ export const Donate = () => {
           </p>
         </div>
 
-        {/* Donation Options */}
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mb-12'>
+        <div className='flex justify-center items-center  mb-12'>
           <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
             <h3 className='text-xl font-bold mb-2 text-green-700'>
-              One-Time Donation
+               Donation
             </h3>
             <p className='text-gray-600 mb-4'>
-              Make a single donation to support our projects.
+              Make a  donation to support our projects.
             </p>
             <button
               onClick={handleDonateClick}
@@ -52,44 +49,15 @@ export const Donate = () => {
               Donate Now
             </button>
           </div>
-          <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
-            <h3 className='text-xl font-bold mb-2 text-green-700'>
-              Monthly Donation
-            </h3>
-            <p className='text-gray-600 mb-4'>
-              Support us monthly and help sustain our initiatives.
-            </p>
-            <button
-              onClick={handleDonateClick}
-              className='bg-green-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-800'
-            >
-              Donate Monthly
-            </button>
-          </div>
-          <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
-            <h3 className='text-xl font-bold mb-2 text-green-700'>
-              Sponsorships
-            </h3>
-            <p className='text-gray-600 mb-4'>
-              Sponsor a specific project or program.
-            </p>
-            <button
-              onClick={handleDonateClick}
-              className='bg-green-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-800'
-            >
-              Learn More
-            </button>
-          </div>
         </div>
 
-        {/* QR Code Section */}
         {showQRCode && (
-          <div className='text-center mt-8'>
+          <div ref={qrCodeRef} className='text-center mt-8'>
             <h3 className='text-2xl font-bold mb-4 text-green-700'>
               Scan to Donate
             </h3>
             <img
-              src='https://via.placeholder.com/200' // Replace with your QR code image
+              src='https://via.placeholder.com/200' 
               alt='Donation QR Code'
               className='mx-auto w-48 h-48'
             />
@@ -99,7 +67,6 @@ export const Donate = () => {
           </div>
         )}
 
-        {/* Transparency Section */}
         <div className='mt-12'>
           <h3 className='text-2xl font-bold mb-4 text-green-700'>
             Transparency

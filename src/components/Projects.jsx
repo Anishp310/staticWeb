@@ -1,10 +1,10 @@
 import React from "react";
-import AnimalWelfareImg from "../assets/animal-welfare.jpg"; // Replace with your actual image
-import SustainableAgriImg from "../assets/sustainable-agticulture.jpg"; // Replace with your actual image
-import EnvironmentalConservationImg from "../assets/env-conv.jpg"; // Replace with your actual image
-import RabiesControlImg from "../assets/rabies-control.jpg"; // Replace with your actual image
-import YouthTrainingImg from "../assets/youth-train.jpg"; // Replace with your actual image
-import VidImg2 from "../assets/2.jpg"; // Ensure this path is correct
+import AnimalWelfareImg from "../assets/animal-welfare.jpg"; 
+import SustainableAgriImg from "../assets/sustainable-agticulture.jpg"; 
+import EnvironmentalConservationImg from "../assets/env-conv.jpg"; 
+import RabiesControlImg from "../assets/rabies-control.jpg"; 
+import YouthTrainingImg from "../assets/youth-train.jpg"; 
+import VidImg2 from "../assets/2.jpg"; 
 
 export const Projects = () => {
   return (
@@ -20,7 +20,6 @@ export const Projects = () => {
         </h2>
       </div>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        {/* Project Categories */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           <div className='bg-white p-6 rounded-lg shadow-lg'>
             <img
@@ -59,7 +58,6 @@ export const Projects = () => {
           </div>
         </div>
 
-        {/* Impact Stories */}
         <div className='mt-12'>
           <h3 className='text-2xl font-bold mb-4'>Impact Stories</h3>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
