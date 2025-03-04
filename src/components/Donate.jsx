@@ -11,7 +11,7 @@ export const Donate = () => {
   };
 
   return (
-    <div className='py-12 bg-gray-50'>
+    <div className='py-12 pt-0 bg-gray-50'>
       <div className='w-full h-64 overflow-hidden'>
         <img
           src={donationImg}
