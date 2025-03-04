@@ -18,7 +18,7 @@ export const Home = () => {
             Join us in creating a better world through environmental
             conservation, social development, and community empowerment.
           </p>
-          <div className='space-x-4'>
+          <div className='flex flex-col sm:flex-row justify-center gap-4'>
             <Link
               to='/get-involved'
               className='bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-green-100'
@@ -31,7 +31,12 @@ export const Home = () => {
             >
               Donate
             </Link>
-           
+            <Link
+              to='/donate'
+              className='bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-green-100'
+            >
+              Volunteer
+            </Link>
           </div>
         </div>
       </section>
