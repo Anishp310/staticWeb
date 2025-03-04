@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import donationImg from "../assets/donation.jpg";
-
+import fonePay from "../assets/fonepay.jpeg";
 export const Donate = () => {
   const [showQRCode, setShowQRCode] = useState(false);
   const qrCodeRef = useRef(null);
@@ -36,11 +36,9 @@ export const Donate = () => {
 
         <div className='flex justify-center items-center  mb-12'>
           <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
-            <h3 className='text-xl font-bold mb-2 text-green-700'>
-               Donation
-            </h3>
+            <h3 className='text-xl font-bold mb-2 text-green-700'>Donation</h3>
             <p className='text-gray-600 mb-4'>
-              Make a  donation to support our projects.
+              Make a donation to support our projects.
             </p>
             <button
               onClick={handleDonateClick}
@@ -57,9 +55,9 @@ export const Donate = () => {
               Scan to Donate
             </h3>
             <img
-              src='https://via.placeholder.com/200' 
+              src={fonePay}
               alt='Donation QR Code'
-              className='mx-auto w-48 h-48'
+              className='mx-auto w-80 h-100'
             />
             <p className='text-gray-600 mt-4'>
               Scan the QR code using your mobile payment app to donate.
