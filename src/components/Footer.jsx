@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-800 text-white py-12' id="Footer">
+    <footer className='bg-gray-800 text-white py-12' id='Footer'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           <div>
@@ -17,44 +18,44 @@ const Footer = () => {
             <h3 className='text-lg font-bold mb-4'>Quick Links</h3>
             <ul className='space-y-2'>
               <li>
-                <a
-                  href='/'
+                <Link
+                  to='/'
                   className='text-sm text-gray-400 hover:text-green-500'
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/about'
+                <Link
+                  to='/about'
                   className='text-sm text-gray-400 hover:text-green-500'
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/projects'
+                <Link
+                  to='/projects'
                   className='text-sm text-gray-400 hover:text-green-500'
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/get-involved'
+                <Link
+                  to='/get-involved'
                   className='text-sm text-gray-400 hover:text-green-500'
                 >
                   Get Involved
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='/donate'
+                <Link
+                  to='/donate'
                   className='text-sm text-gray-400 hover:text-green-500'
                 >
                   Donate
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

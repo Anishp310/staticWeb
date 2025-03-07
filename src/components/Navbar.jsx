@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa"; 
+import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -50,6 +50,12 @@ const Navbar = () => {
               Donate
             </Link>
             <a
+              href='#gallery'
+              className='text-gray-700 hover:text-green-600 font-medium'
+            >
+              Gallery
+            </a>
+            <a
               href='#Footer'
               className='text-gray-700 hover:text-green-600 font-medium'
             >
@@ -63,15 +69,15 @@ const Navbar = () => {
               className='text-gray-700 hover:text-green-600 focus:outline-none'
             >
               {isMenuOpen ? (
-                <FaTimes className='h-6 w-6' /> 
+                <FaTimes className='h-6 w-6' />
               ) : (
-                <FaBars className='h-6 w-6' /> 
+                <FaBars className='h-6 w-6' />
               )}
             </button>
           </div>
         </div>
       </div>
- 
+
       {isMenuOpen && (
         <div className='md:hidden'>
           <div className=' px-2 pt-2 pb-3 space-y-1 sm:px-3'>
@@ -110,6 +116,13 @@ const Navbar = () => {
             >
               Donate
             </Link>
+            <a
+              href='#gallery'
+              className='block text-gray-700 hover:text-green-600 font-medium'
+              onClick={toggleMenu}
+            >
+              Gallery
+            </a>
             <a
               href='#Footer'
               className='block text-gray-700 hover:text-green-600 font-medium'

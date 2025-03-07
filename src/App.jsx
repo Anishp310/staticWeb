@@ -7,6 +7,7 @@ import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import {GetInvolved} from "./components/GetInvolved";
 import {Donate} from "./components/Donate";
+// import Gallery from "./components/Gallery";
 // import {Contact} from "./components/Contact";
 
 
@@ -22,6 +23,7 @@ function App() {
             <Route path='/projects' element={<Projects />} />
             <Route path='/get-involved' element={<GetInvolved />} />
             <Route path='/donate' element={<Donate />} />
+            {/* <Route path='/gallery' element={<Gallery />} /> */}
           </Routes>
         </main>
         <Footer />

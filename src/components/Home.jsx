@@ -1,6 +1,7 @@
 import React from "react";
 import VidImg from "../assets/3.jpg";
 import { Link } from "react-router-dom";
+import Gallery from "./Gallery";
 
 export const Home = () => {
   return (
@@ -104,6 +105,10 @@ export const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section>
+        <Gallery/>
       </section>
     </div>
   );
