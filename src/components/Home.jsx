@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import VidImg from "../assets/3.jpg";
 import { Link } from "react-router-dom";
 import Gallery from "./Gallery";
 
 export const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollToGallery) {
+      const gallerySection = document.getElementById("gallery");
+      if (gallerySection) {
+        gallerySection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <div>
       {/* Banner Section */}
@@ -12,7 +24,7 @@ export const Home = () => {
         style={{ backgroundImage: `url(${VidImg})` }}
       >
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
-          <h1 className='text-4xl font-bold mb-4 '>
+          <h1 className='text-4xl font-bold mb-4'>
             Empowering Youth for a Sustainable Future
           </h1>
           <p className='text-lg mb-8'>
@@ -86,30 +98,29 @@ export const Home = () => {
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             <div className='bg-white p-6 rounded-lg shadow-lg'>
-              <h3 className='text-xl font-bold mb-2'>
-                Rabies Control in Arghakhanchi
-              </h3>
+              <h3 className='text-xl font-bold mb-2'>Empowering Women</h3>
               <p className='text-gray-600'>
-                Sterilized and vaccinated 120 dogs, reducing rabies cases by 50%
-                in the region.
+                We’ve empowered women in rural areas through skill development
+                and entrepreneurship programs.
               </p>
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg'>
-              <h3 className='text-xl font-bold mb-2'>
-                Youth Leadership Training
-              </h3>
+              <h3 className='text-xl font-bold mb-2'>Youth Leadership</h3>
               <p className='text-gray-600'>
-                Trained 53 students in technical skills, enhancing their
-                employability and leadership capabilities.
+                Our leadership training programs have shaped young leaders who
+                are making a difference in their communities.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <Gallery/>
+      {/* Gallery Section */}
+      <section id='gallery' className='py-12 bg-gray-100'>
+        <Gallery />
       </section>
     </div>
   );
 };
+
+export default Home;

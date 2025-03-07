@@ -28,7 +28,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className='p-4' id='gallery'>
+    <section className='p-4' >
       <h2 className='text-3xl font-bold text-center mb-8'>Gallery</h2>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4'>
         {currentImages.map((src, index) => (

@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate(); // React Router's useNavigate hook
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToGallery = () => {
+    navigate("/", { state: { scrollToGallery: true } });
   };
 
   return (
@@ -52,6 +58,7 @@ const Navbar = () => {
             <a
               href='#gallery'
               className='text-gray-700 hover:text-green-600 font-medium'
+              onClick={scrollToGallery}
             >
               Gallery
             </a>
@@ -80,7 +87,7 @@ const Navbar = () => {
 
       {isMenuOpen && (
         <div className='md:hidden'>
-          <div className=' px-2 pt-2 pb-3 space-y-1 sm:px-3'>
+          <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
             <Link
               to='/'
               className='block text-gray-700 hover:text-green-600 font-medium'
