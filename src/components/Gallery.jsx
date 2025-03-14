@@ -25,7 +25,7 @@ const Gallery = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -35,17 +35,17 @@ const Gallery = () => {
       <h2 className='text-4xl font-bold text-center mb-8 text-gray-800'>
         Gallery
       </h2>
-      <div className='relative flex items-center justify-between'>
-        {/* Left Arrow */}
+      <div className='relative'>
+        {/* Left Arrow (hidden on small devices) */}
         <button
           onClick={handlePrev}
-          className='opacity-[0.5] absolute left-2 md:left-4 bg-black bg-opacity-50 text-white p-3 rounded-full shadow-lg hover:bg-opacity-80 transition duration-300 z-10'
+          className='opacity-50 absolute left-2 bottom-[45%] md:left-4 bg-black bg-opacity-50 text-white p-3 rounded-full shadow-lg hover:bg-opacity-80 transition duration-300 z-10 md:block hidden'
         >
           <FaArrowLeft size={24} />
         </button>
 
         {/* Images */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6'>
           {[...Array(imagesPerPage)].map((_, index) => {
             const imgIndex = (currentIndex + index) % images.length;
             return (
@@ -63,12 +63,12 @@ const Gallery = () => {
           })}
         </div>
 
-        {/* Right Arrow */}
+        {/* Right Arrow (hidden on small devices) */}
         <button
           onClick={handleNext}
-          className='opacity-[0.5] absolute right-2 md:right-4 bg-black bg-opacity-50 text-white p-3 rounded-full shadow-lg hover:bg-opacity-80 transition duration-300 z-10'
+          className='opacity-50 absolute right-2 bottom-[45%] md:right-4 bg-black bg-opacity-50 text-white p-3 rounded-full shadow-lg hover:bg-opacity-80 transition duration-300 z-10 md:block hidden'
         >
-          <FaArrowRight size={24} className='' />
+          <FaArrowRight size={24} />
         </button>
       </div>
     </section>
