@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import g1 from "../assets/gallery/g1.jpg";
 import g2 from "../assets/gallery/g2.jpg";
 import g3 from "../assets/gallery/g3.jpg";
@@ -10,55 +11,64 @@ import g8 from "../assets/gallery/g8.jpg";
 
 const Gallery = () => {
   const images = [g1, g2, g3, g4, g5, g6, g7, g8];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const imagesPerPage = 4;
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const imagesPerPage = 8; 
-  const totalPages = Math.ceil(images.length / imagesPerPage);
-
-  const indexOfLastImage = currentPage * imagesPerPage;
-  const indexOfFirstImage = indexOfLastImage - imagesPerPage;
-  const currentImages = images.slice(indexOfFirstImage, indexOfLastImage);
-
-  const handlePrevPage = () => {
-    setCurrentPage((prev) => Math.max(prev - 1, 1));
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  const handleNextPage = () => {
-    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
-    <section className='p-4' >
-      <h2 className='text-3xl font-bold text-center mb-8'>Gallery</h2>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4'>
-        {currentImages.map((src, index) => (
-          <div key={index} className='overflow-hidden rounded-lg shadow-md'>
-            <img
-              src={src}
-              alt={`Gallery Image ${index + 1}`}
-              className='w-full h-full object-cover transform transition duration-300 hover:scale-105'
-            />
-          </div>
-        ))}
-      </div>
-      {/* Pagination Controls */}
-      <div className='flex justify-center items-center mt-4 space-x-4'>
+    <section className='relative p-6 max-w-7xl mx-auto'>
+      <h2 className='text-4xl font-bold text-center mb-8 text-gray-800'>
+        Gallery
+      </h2>
+      <div className='relative flex items-center justify-between'>
+        {/* Left Arrow */}
         <button
-          onClick={handlePrevPage}
-          disabled={currentPage === 1}
-          className='px-4 py-2 bg-gray-300 text-gray-800 rounded disabled:opacity-50'
+          onClick={handlePrev}
+          className='opacity-[0.5] absolute left-2 md:left-4 bg-black bg-opacity-50 text-white p-3 rounded-full shadow-lg hover:bg-opacity-80 transition duration-300 z-10'
         >
-          Previous
+          <FaArrowLeft size={24} />
         </button>
-        <span>
-          Page {currentPage} of {totalPages}
-        </span>
+
+        {/* Images */}
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6'>
+          {[...Array(imagesPerPage)].map((_, index) => {
+            const imgIndex = (currentIndex + index) % images.length;
+            return (
+              <div
+                key={imgIndex}
+                className='overflow-hidden rounded-lg shadow-lg'
+              >
+                <img
+                  src={images[imgIndex]}
+                  alt={`Gallery Image ${imgIndex + 1}`}
+                  className='w-full h-64 object-cover transform transition duration-500 hover:scale-110 rounded-lg'
+                />
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Right Arrow */}
         <button
-          onClick={handleNextPage}
-          disabled={currentPage === totalPages}
-          className='px-4 py-2 bg-gray-300 text-gray-800 rounded disabled:opacity-50'
+          onClick={handleNext}
+          className='opacity-[0.5] absolute right-2 md:right-4 bg-black bg-opacity-50 text-white p-3 rounded-full shadow-lg hover:bg-opacity-80 transition duration-300 z-10'
         >
-          Next
+          <FaArrowRight size={24} className='' />
         </button>
       </div>
     </section>

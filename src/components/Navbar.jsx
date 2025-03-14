@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import  logo  from "../assets/yeast_logo.jpg";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate(); // React Router's useNavigate hook
@@ -17,10 +17,10 @@ const Navbar = () => {
   return (
     <nav className='bg-white shadow-lg'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='flex justify-between h-16'>
+        <div className='flex justify-between h-25'>
           <div className='flex-shrink-0 flex items-center'>
             <Link to='/' className='text-2xl font-bold text-green-700'>
-              YEAST
+              <img src={logo} alt='YEAST Logo' className='h-20 w-auto' />
             </Link>
           </div>
 

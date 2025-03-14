@@ -41,6 +41,19 @@ export const GetInvolved = () => {
             and reach even more people. Join us today and help us grow our
             impact.
           </p>
+          <div className='flex sm:flex-row flex-col gap-2 '>
+            <button className='relative px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-95'>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSeOcAQz497BrE3BnZYN4rQ2W8e8f8Ds5IYo7q94IPqSrdauXg/viewform'>
+                Yearly Membership
+              </a>
+            </button>
+
+            <button className='relative px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-95'>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLScl5TWMX4ZOsXFHNzdAMxvHDC0tcSM4VAwMUp-wW9ilEnBgkQ/viewform'>
+                Lifetime Membership
+              </a>
+            </button>
+          </div>
         </div>
 
         {/* Internship Programs */}
