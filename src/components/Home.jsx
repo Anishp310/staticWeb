@@ -45,7 +45,7 @@ export const Home = () => {
               Donate
             </Link>
             <Link
-              to='/donate'
+              to='/get-involved'
               className='bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-green-100'
             >
               Volunteer

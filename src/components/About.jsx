@@ -1,6 +1,8 @@
 import React from "react";
 import VidImg1 from "../assets/1.jpg"; 
 import VidImg2 from "../assets/2.jpg";
+import Advisor1 from "../assets/team/AakritRijal.jpg";
+
 
 export const About = () => {
   return (
@@ -159,7 +161,7 @@ export const About = () => {
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150' 
+                src={Advisor1} 
                 alt='Aakrit Rizal'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />

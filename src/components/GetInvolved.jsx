@@ -27,6 +27,11 @@ export const GetInvolved = () => {
             participate and join our mission to create a positive change in the
             world.
           </p>
+          <button className='relative px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-95'>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSeuj-06az5h-r5pLVN06NUTS577gOXWJvsXdaiv-ErhOP8CLQ/viewform?usp=sharing'>
+               Volunteer
+              </a>
+            </button>
         </div>
 
         {/* Membership */}
@@ -68,6 +73,11 @@ export const GetInvolved = () => {
             internship programs offer the opportunity to make a difference while
             building your professional skills.
           </p>
+          <button className='relative px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-95'>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLScMskp2Dyv1DuoFx6urlziVeGp_ycHnPEvh2voGMlKt0tMhig/viewform'>
+              Apply for Internship
+              </a>
+            </button>
         </div>
       </div>
     </div>

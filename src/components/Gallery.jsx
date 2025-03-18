@@ -8,9 +8,15 @@ import g5 from "../assets/gallery/g5.jpg";
 import g6 from "../assets/gallery/g6.jpg";
 import g7 from "../assets/gallery/g7.jpg";
 import g8 from "../assets/gallery/g8.jpg";
+import g9 from "../assets/gallery/g9.jpg";
+import g10 from "../assets/gallery/g10.jpg";
+import g11 from "../assets/gallery/g11.jpg";
+import g12 from "../assets/gallery/g12.jpg";
+import g13 from "../assets/gallery/g13.jpeg";
+
 
 const Gallery = () => {
-  const images = [g1, g2, g3, g4, g5, g6, g7, g8];
+  const images = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12, g13];
   const [currentIndex, setCurrentIndex] = useState(0);
   const imagesPerPage = 4;
 
