@@ -1,8 +1,11 @@
 import React from "react";
 import VidImg1 from "../assets/1.jpg"; 
 import VidImg2 from "../assets/2.jpg";
-import Advisor1 from "../assets/team/AakritRijal.jpg";
-
+import Advisor1 from "../assets/team/HumaNeupane.png";
+import Advisor2 from "../assets/team/KamalRegmi.jpg";
+import Advisor3 from "../assets/team/AkritRijal.jpg";
+import Advisor4 from "../assets/team/Anish Gyawali.jpg";
+import Advisor5 from "../assets/team/Utsab Sapkota.jpg";
 
 export const About = () => {
   return (
@@ -141,7 +144,7 @@ export const About = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150' 
+                src={Advisor1}
                 alt='Huma Neupane'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
@@ -150,7 +153,7 @@ export const About = () => {
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150' 
+                src={Advisor2}
                 alt='Kamal Regmi'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
@@ -161,12 +164,30 @@ export const About = () => {
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src={Advisor1} 
-                alt='Aakrit Rizal'
+                src={Advisor3} 
+                alt='Akrit Rizal'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
-              <h4 className='text-xl font-bold mb-2'>Dr. Aakrit Rizal</h4>
+              <h4 className='text-xl font-bold mb-2'>Dr. Akrit Rizal</h4>
               <p className='text-gray-600'>Founding President</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Advisor4} 
+                alt='Anish Gyawali'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Mr. Anish Gyawali </h4>
+              <p className='text-gray-600'>Former President</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Advisor5} 
+                alt='Utsab Sapkota'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Mr. Utsab Sapkota</h4>
+              <p className='text-gray-600'>Former President</p>
             </div>
           </div>
         </div>
