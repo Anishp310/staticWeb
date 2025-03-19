@@ -6,10 +6,32 @@ import Advisor2 from "../assets/team/KamalRegmi.jpg";
 import Advisor3 from "../assets/team/AkritRijal.jpg";
 import Advisor4 from "../assets/team/Anish Gyawali.jpg";
 import Advisor5 from "../assets/team/Utsab Sapkota.jpg";
-import President from "../assets/team/Utsab Sapkota.jpg";
-import AC from "../assets/team/Utsab Sapkota.jpg";
-import Smc from "../assets/team/Utsab Sapkota.jpg";
-import SC from "../assets/team/Utsab Sapkota.jpg";
+import President from "../assets/team/Pardip bhusal.jpg";
+import VPresident from "../assets/team/Resma KC.jpg";
+import Secretary from "../assets/team/Arbin Dawadi.jpg";
+import VSecretary from "../assets/team/sadikshya Bhattarai.jpg";
+import Treasurer from "../assets/team/Indu Panthi.jpg";
+import AC from "../assets/team/saraswati_gautam.jpg";
+import SC from "../assets/team/manisha_dhakal.jpg";
+import Smc from "../assets/team/ritu Bhattarai.jpg";
+import m1 from "../assets/team/m1.jpg";
+import m2 from "../assets/yeast_logo.jpg";
+import m3 from "../assets/yeast_logo.jpg";
+import m4 from "../assets/team/m4.jpg";
+import m5 from "../assets/team/m5.jpg";
+import m6 from "../assets/team/m6.jpg"; 
+import m7 from "../assets/team/m7.jpg";
+import m8 from "../assets/team/m8.jpg";
+import Samikshya from "../assets/team/Samikshya Ryamajhi.jpg";
+import Bishal from "../assets/team/BIshal Dhungana.jpg";
+import kamal from "../assets/team/Kamal Acharya.jpg";
+import Srijana from "../assets/team/Sirjana Basyal.jpg";
+import Manish from "../assets/team/Manish Dahal.jpg";
+import Samundra from "../assets/team/samundra Pandey.jpg";
+
+
+
+
 
 
 
@@ -24,8 +46,8 @@ export const About = () => {
           alt='Banner'
           className='w-full h-full object-cover'
         />
-        <h2 className='absolute top-[20%] left-[30%] text-3xl font-bold text-center mb-8 mt-8 text-white'>
-          About YEAST
+        <h2 className='absolute top-[10%] left-[10%] text-3xl font-bold text-center mb-8 mt-8 text-black'>
+          About Youth for Environment And Social Transformation-YEAST
         </h2>
       </div>
 
@@ -215,38 +237,49 @@ export const About = () => {
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src={SC} 
-                alt='Manisha Dhakal'
+                src={VPresident} 
+                alt='Reshma KC'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
-              <h4 className='text-xl font-bold mb-2'>Manisha Dhakal</h4>
-              <p className='text-gray-600'>Social Coordinator</p>
+              <h4 className='text-xl font-bold mb-2'>Reshma KC</h4>
+              <p className='text-gray-600'>Vice President</p>
             </div> <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src={SC} 
-                alt='Manisha Dhakal'
+                src={Secretary} 
+                alt='Secretary'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
-              <h4 className='text-xl font-bold mb-2'>Manisha Dhakal</h4>
-              <p className='text-gray-600'>Social Coordinator</p>
+              <h4 className='text-xl font-bold mb-2'>Arbin Dawadi</h4>
+              <p className='text-gray-600'>Secretary</p>
             </div> <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src={SC} 
-                alt='Manisha Dhakal'
+                src={VSecretary} 
+                alt='Vice Secretary'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
-              <h4 className='text-xl font-bold mb-2'>Manisha Dhakal</h4>
-              <p className='text-gray-600'>Social Coordinator</p>
+              <h4 className='text-xl font-bold mb-2'>Sadikshya Bhattarai</h4>
+              <p className='text-gray-600'>Vice Secretary</p>
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
+                src={Treasurer} 
+                alt='Treasurer'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Indu Panthi</h4>
+              <p className='text-gray-600'>Treasurer</p>
+            </div>
+           
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
                 src={AC} 
-                alt='Saraswoti Gautam'
+                alt='Applied Coordinator'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
               <h4 className='text-xl font-bold mb-2'>Saraswoti Gautam</h4>
               <p className='text-gray-600'>Applied Coordinator</p>
             </div>
+
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
                 src={Smc}
@@ -256,6 +289,7 @@ export const About = () => {
               <h4 className='text-xl font-bold mb-2'>Ritu Bhattarai</h4>
               <p className='text-gray-600'>Social Media Coordinator</p>
             </div>
+            
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
                 src={SC} 
@@ -268,12 +302,13 @@ export const About = () => {
           </div>
         </div>
 
-        <div>
+        <div className="members">
           <h3 className='text-2xl font-bold mb-8 text-center'>Our Members</h3>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150' 
+                src={m1} 
+                alt='Kritima Sapkota'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
               <h4 className='text-xl font-bold mb-2'>Kritima Sapkota</h4>
@@ -281,7 +316,16 @@ export const About = () => {
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150'
+                src={m2} 
+                alt='Samikshya Khanal'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Samikshya Khanal</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={m3} 
                 alt='Amrit Bhusal'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
@@ -290,24 +334,188 @@ export const About = () => {
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150' 
+                src={m4} 
                 alt='Prabin Thapa'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
               <h4 className='text-xl font-bold mb-2'>Prabin Thapa</h4>
               <p className='text-gray-600'>Member</p>
             </div>
+           
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150'
+                src={m5} 
                 alt='Bishal Kunwar'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
               <h4 className='text-xl font-bold mb-2'>Bishal Kunwar</h4>
               <p className='text-gray-600'>Member</p>
             </div>
+            
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                 src={m6}
+                alt='Kalyan Aryan'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Kalyan Aryan</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+            
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                 src={m7}
+                alt='Sanjay Yadav'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Sanjay Yadav</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+            
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                 src={m8}
+                alt='Sandeep Mourya'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Sandeep Mourya</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+
           </div>
         </div>
+
+        <div className="founding Comittee">
+          <br></br>
+          <h3 className='text-2xl font-bold mb-8 text-center'>Founding Committee</h3>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+          
+          <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Advisor3} 
+                alt='President'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Dr. Akrit Rijal</h4>
+              <p className='text-gray-600'>President</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Srijana} 
+                alt='Vice President'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Srijana Basyal</h4>
+              <p className='text-gray-600'>Vice President</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Advisor4} 
+                alt='Secretary'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Mr. Anish Gyawali </h4>
+              <p className='text-gray-600'>Secretary</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Manish} 
+                alt='VSecretary'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Mr. Manish Dahal </h4>
+              <p className='text-gray-600'>Secretary</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={m2} 
+                alt='Tresaurer'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Mr. Bipin Bhandari </h4>
+              <p className='text-gray-600'>Treasurer</p>
+            </div>
+            
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={kamal} 
+                alt='Kamal Acharya'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Mr. Kamal Acharya</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Advisor5} 
+                alt='Utsab Sapkota'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Mr. Utsab Sapkota</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Bishal} 
+                alt='Bishal Dhungana'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Mr. Bishal Dhungana</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Samikshya} 
+                alt='Samikshya Rayamajhi '
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Samikshya Rayamajhi </h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+           
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={Treasurer} 
+                alt='Indu Panth'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Indu Panthi</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+            
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                 src={Secretary}
+                alt='Arbin Dawadi'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Mr. Arbin Dawadi</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+            
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                 src={m2}
+                alt='Indu Gyawali'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Indu Gyawali</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+            
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                 src={m3}
+                alt='Prakriti'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Prakriti Bhusal</h4>
+              <p className='text-gray-600'>Member</p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
   );

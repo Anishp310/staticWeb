@@ -15,7 +15,7 @@ export const Projects = () => {
           alt='Banner'
           className='w-full h-full object-cover'
         />
-        <h2 className='absolute top-[30%] left-[30%] text-3xl font-bold text-center mb-8 text-white'>
+        <h2 className='absolute top-[30%] left-[30%] text-3xl font-bold text-center mb-8 text-black'>
           Projects & Initiatives
         </h2>
       </div>

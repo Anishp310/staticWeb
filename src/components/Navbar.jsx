@@ -49,6 +49,7 @@ const Navbar = () => {
             >
               Get Involved
             </Link>
+            
             <Link
               to='/donate'
               className='text-gray-700 hover:text-green-600 font-medium'
@@ -130,6 +131,13 @@ const Navbar = () => {
             >
               Gallery
             </a>
+            <Link
+              to='/collabrate'
+              className='block text-gray-700 hover:text-green-600 font-medium'
+              onClick={toggleMenu}
+            >
+              Collabrate
+            </Link>
             <a
               href='#Footer'
               className='block text-gray-700 hover:text-green-600 font-medium'

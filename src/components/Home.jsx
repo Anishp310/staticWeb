@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import VidImg from "../assets/3.jpg";
 import { Link } from "react-router-dom";
 import Gallery from "./Gallery";
+import Collabrate from "./Collabrate";
 
 export const Home = () => {
   const location = useLocation();
@@ -12,6 +13,17 @@ export const Home = () => {
       const gallerySection = document.getElementById("gallery");
       if (gallerySection) {
         gallerySection.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState({}, document.title); // Reset state
+      }
+    }
+  }, [location]);
+
+  useEffect(() => {
+    if (location.state?.scrollToCollabrate) {
+      const collabrateSection = document.getElementById("collabrate");
+      if (collabrateSection) {
+        collabrateSection.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState({}, document.title); // Reset state
       }
     }
   }, [location]);
@@ -119,6 +131,9 @@ export const Home = () => {
       <section id='gallery' className='py-12 bg-gray-100'>
         <Gallery />
       </section>
+
+      {/* Collaborate Section */}
+      <Collabrate />
     </div>
   );
 };
