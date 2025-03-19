@@ -6,6 +6,13 @@ import Advisor2 from "../assets/team/KamalRegmi.jpg";
 import Advisor3 from "../assets/team/AkritRijal.jpg";
 import Advisor4 from "../assets/team/Anish Gyawali.jpg";
 import Advisor5 from "../assets/team/Utsab Sapkota.jpg";
+import President from "../assets/team/Utsab Sapkota.jpg";
+import AC from "../assets/team/Utsab Sapkota.jpg";
+import Smc from "../assets/team/Utsab Sapkota.jpg";
+import SC from "../assets/team/Utsab Sapkota.jpg";
+
+
+
 
 export const About = () => {
   return (
@@ -199,7 +206,7 @@ export const About = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150' 
+                src={President} 
                 alt='Pradeep Bhusal'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
@@ -208,7 +215,32 @@ export const About = () => {
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150' 
+                src={SC} 
+                alt='Manisha Dhakal'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Manisha Dhakal</h4>
+              <p className='text-gray-600'>Social Coordinator</p>
+            </div> <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={SC} 
+                alt='Manisha Dhakal'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Manisha Dhakal</h4>
+              <p className='text-gray-600'>Social Coordinator</p>
+            </div> <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={SC} 
+                alt='Manisha Dhakal'
+                className='w-24 h-24 rounded-full mx-auto mb-4'
+              />
+              <h4 className='text-xl font-bold mb-2'>Manisha Dhakal</h4>
+              <p className='text-gray-600'>Social Coordinator</p>
+            </div>
+            <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
+              <img
+                src={AC} 
                 alt='Saraswoti Gautam'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
@@ -217,7 +249,7 @@ export const About = () => {
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150'
+                src={Smc}
                 alt='Ritu Bhattarai'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
@@ -226,7 +258,7 @@ export const About = () => {
             </div>
             <div className='bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300'>
               <img
-                src='https://via.placeholder.com/150' 
+                src={SC} 
                 alt='Manisha Dhakal'
                 className='w-24 h-24 rounded-full mx-auto mb-4'
               />
