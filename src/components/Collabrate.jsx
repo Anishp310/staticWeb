@@ -33,7 +33,7 @@ const Collabrate = () => {
   return (
     <section className='relative p-6 max-w-7xl mx-auto'>
       <h2 className='text-4xl font-bold text-center mb-8 text-gray-800'>
-        Collabrators
+        Our Collabrators
       </h2>
       <div className='relative'>
         {/* Left Arrow (hidden on small devices) */}
