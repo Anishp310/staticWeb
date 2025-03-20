@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import VidImg from "../assets/3.jpg";
 import { Link } from "react-router-dom";
 import Gallery from "./Gallery";
-import Collabrate from "./Collabrate";
+import Collabrate from "./collabrate";
 
 export const Home = () => {
   const location = useLocation();
