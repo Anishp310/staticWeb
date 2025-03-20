@@ -34,6 +34,11 @@ export const Home = () => {
         style={{ backgroundImage: `url(${VidImg})` }}
       >
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+         
+        <h2 className='absolute top-[15%] left-[30%] text-3xl font-bold text-center mb-8 mt-8 text-white'>
+          Youth for Environment And Social Transformation
+        </h2>
+
           <h1 className='text-4xl font-bold mb-4'>
             Empowering Youth for a Sustainable Future
           </h1>
