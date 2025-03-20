@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import  logo  from "../assets/yeast_logo.jpg";
+import logo from "../assets/yeast_logo.jpg";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate(); // React Router's useNavigate hook
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -12,6 +13,20 @@ const Navbar = () => {
 
   const scrollToGallery = () => {
     navigate("/", { state: { scrollToGallery: true } });
+  };
+
+  const scrollToCollaborate = () => {
+    navigate("/", { state: { scrollToCollaborate: true } }); 
+  };
+
+  //for mobil
+  const scrollforGallery = () => {
+     setIsMenuOpen(!isMenuOpen);
+    navigate("/", { state: { scrollToGallery: true } });
+  };
+  const scrollforCollaborate = () => {
+    setIsMenuOpen(!isMenuOpen);
+    navigate("/", { state: { scrollToCollaborate: true } });
   };
 
   return (
@@ -23,7 +38,6 @@ const Navbar = () => {
               <img src={logo} alt='YEAST Logo' className='h-20 w-auto' />
             </Link>
           </div>
-
           <div className='hidden md:flex space-x-8 items-center'>
             <Link
               to='/'
@@ -49,7 +63,6 @@ const Navbar = () => {
             >
               Get Involved
             </Link>
-            
             <Link
               to='/donate'
               className='text-gray-700 hover:text-green-600 font-medium'
@@ -64,13 +77,19 @@ const Navbar = () => {
               Gallery
             </a>
             <a
+              href='#collaborate' // Corrected href
+              className='text-gray-700 hover:text-green-600 font-medium cursor-pointer'
+              onClick={scrollToCollaborate}
+            >
+              Collaborate
+            </a>
+            <a
               href='#Footer'
               className='text-gray-700 hover:text-green-600 font-medium'
             >
               Contact Us
             </a>
           </div>
-
           <div className='flex items-center md:hidden'>
             <button
               onClick={toggleMenu}
@@ -127,17 +146,17 @@ const Navbar = () => {
             <a
               href='#gallery'
               className='block text-gray-700 hover:text-green-600 font-medium'
-              onClick={toggleMenu}
+              onClick={ scrollforGallery}
             >
               Gallery
             </a>
-            <Link
-              to='/collabrate'
+            <a
+              href='#collaborate'
               className='block text-gray-700 hover:text-green-600 font-medium'
-              onClick={toggleMenu}
+              onClick={scrollforCollaborate}
             >
-              Collabrate
-            </Link>
+              Collaborate
+            </a>
             <a
               href='#Footer'
               className='block text-gray-700 hover:text-green-600 font-medium'

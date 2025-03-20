@@ -9,7 +9,7 @@ import g6 from "../assets/collabrate/g2.jpg";
 
 
 
-const Collabrate = () => {
+const Collaborate = () => {
   const images = [g1, g2, g3,g4,g5,g6];
   const [currentIndex, setCurrentIndex] = useState(0);
   const imagesPerPage = 4;
@@ -75,4 +75,4 @@ const Collabrate = () => {
   );
 };
 
-export default Collabrate;
+export default Collaborate;
